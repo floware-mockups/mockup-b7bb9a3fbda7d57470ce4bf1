@@ -1,6 +1,6 @@
 {
   "title": "Gestione prenotazioni sale riunioni",
-  "description": "Prototipo navigabile per consultare l’agenda settimanale, verificare la disponibilità delle sale e registrare o confermare le prenotazioni.",
+  "description": "Prototipo navigabile per consultare l’agenda, verificare la disponibilità delle sale e registrare prenotazioni. La lista delle prenotazioni include un filtro per data e un’azione per esportare i risultati filtrati in CSV.",
   "accent": "indigo",
   "pages": [
     {
@@ -81,7 +81,7 @@
     {
       "id": "prenotazioni",
       "title": "Prenotazioni",
-      "description": "Consulta e filtra le prenotazioni, quindi conferma quelle in attesa.",
+      "description": "Consulta e filtra le prenotazioni per data; esporta in CSV la lista risultante dai filtri applicati.",
       "metrics": [
         {
           "label": "Totale",
