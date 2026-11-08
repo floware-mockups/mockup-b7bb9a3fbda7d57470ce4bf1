@@ -1,0 +1,239 @@
+{
+  "title": "Gestione prenotazioni sale riunioni",
+  "description": "Prototipo navigabile per consultare l’agenda settimanale, verificare la disponibilità delle sale e registrare o confermare le prenotazioni.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Agenda settimanale",
+      "description": "Riepilogo della settimana e panoramica delle prenotazioni per giorno e sala.",
+      "metrics": [
+        {
+          "label": "Prenotazioni settimana",
+          "value": "18"
+        },
+        {
+          "label": "Sale disponibili oggi",
+          "value": "4"
+        },
+        {
+          "label": "Da confermare",
+          "value": "3"
+        },
+        {
+          "label": "Prossima prenotazione",
+          "value": "09:30"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Orario",
+        "Sala",
+        "Organizzazione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lunedì",
+          "09:30–10:30",
+          "Lumo",
+          "Nubi Studio",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "11:00–12:00",
+          "Vela",
+          "Tessera Lab",
+          "In attesa"
+        ],
+        [
+          "Martedì",
+          "10:00–11:30",
+          "Nubi",
+          "Lumo Atelier",
+          "Confermata"
+        ],
+        [
+          "Mercoledì",
+          "14:00–15:00",
+          "Vela",
+          "Nubi Studio",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "09:00–10:00",
+          "Lumo",
+          "Tessera Lab",
+          "In attesa"
+        ],
+        [
+          "Venerdì",
+          "15:00–16:00",
+          "Nubi",
+          "Lumo Atelier",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Prenotazioni",
+      "description": "Consulta e filtra le prenotazioni, quindi conferma quelle in attesa.",
+      "metrics": [
+        {
+          "label": "Totale",
+          "value": "18"
+        },
+        {
+          "label": "In attesa",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:30–10:30",
+          "Nubi Studio",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Lunedì",
+          "11:00–12:00",
+          "Tessera Lab",
+          "4",
+          "In attesa"
+        ],
+        [
+          "Nubi",
+          "Martedì",
+          "10:00–11:30",
+          "Lumo Atelier",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Mercoledì",
+          "14:00–15:00",
+          "Nubi Studio",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Lumo",
+          "Giovedì",
+          "09:00–10:00",
+          "Tessera Lab",
+          "3",
+          "In attesa"
+        ],
+        [
+          "Nubi",
+          "Venerdì",
+          "15:00–16:00",
+          "Lumo Atelier",
+          "7",
+          "Confermata"
+        ]
+      ],
+      "form": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "nuova-prenotazione",
+      "title": "Nuova prenotazione",
+      "description": "Inserisci una richiesta di prenotazione; le nuove richieste vengono registrate in attesa di conferma.",
+      "metrics": [],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "sale",
+      "title": "Sale riunioni",
+      "description": "Consulta le sale disponibili e la loro capienza.",
+      "metrics": [
+        {
+          "label": "Sale attive",
+          "value": "4"
+        },
+        {
+          "label": "Capienza complessiva",
+          "value": "32"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Disponibilità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "8",
+          "Schermo, lavagna",
+          "Disponibile",
+          "Attiva"
+        ],
+        [
+          "Vela",
+          "6",
+          "Schermo",
+          "Occupata fino alle 12:00",
+          "Attiva"
+        ],
+        [
+          "Nubi",
+          "10",
+          "Lavagna, tavolo modulare",
+          "Disponibile",
+          "Attiva"
+        ],
+        [
+          "Tessera",
+          "8",
+          "Schermo, lavagna",
+          "Disponibile",
+          "Attiva"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
